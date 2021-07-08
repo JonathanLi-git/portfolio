@@ -1,0 +1,26 @@
+#portrait-box {
+  padding-top: 6%;
+}
+#portrait {
+  width: auto;
+  max-width: 50%;
+  height: auto;
+  max-height: 50%;
+  position: relative;
+  left: 25%;
+}
+#rotunda {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 50%;
+}
+#rotunda-box {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  height: 50%;
+}
+#skills-box {
+  padding-left: 9%;
+}

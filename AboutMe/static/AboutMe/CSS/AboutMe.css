@@ -1,0 +1,21 @@
+
+
+#me {
+  width: auto;
+  max-width: 350px;
+  height: auto;
+  max-height: 650px;
+}
+.info {
+  margin-top: 10%;
+  padding-top: 9%;
+}
+.intro p {
+  position: relative;
+  padding-top: 15%;
+}
+.back {
+  background-image: url(
+    "../IMG/wall.jpg"
+  ) 50% 0 no-repeat fixed;
+}

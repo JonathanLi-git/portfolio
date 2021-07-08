@@ -1,0 +1,40 @@
+#stonk {
+  width: auto;
+  max-width: 400px;
+  height: auto;
+  max-height: 400px;
+}
+#gradient {
+  width: auto;
+  max-width: 427px;
+  height: auto;
+  max-height: 427px;
+}
+#java {
+  width: auto;
+  max-width: 500px;
+  height: auto;
+  max-height: 500px;
+}
+.my-custom-row {
+  background-color: rgb(247, 193, 175);
+  height: 300px;
+}
+.my-custom-row-2 {
+  background-color: rgb(247, 193, 175);
+}
+.my-custom-row-3 {
+  background-color: rgb(247, 193, 175);
+}
+.projects-row {
+  background-color: rgba(255, 255, 255, 0.905);
+}
+.my-custom-row-4 {
+  background-color: rgba(150, 252, 242, 0.823);
+}
+#website {
+  width: auto;
+  max-width: 550px;
+  height: auto;
+  max-height: 350px;
+}
