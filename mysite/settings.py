@@ -25,7 +25,7 @@ SECRET_KEY = 'g-=7!xh#fcpc*p$e9ylo36ds@*=3=916ck%io7l(#&+#3s6y9w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 
 # Application definition
@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+     'whitenoise.runserver_nostatic',
+    'django.contrib.staticfiles',
+    # ...
 ]
 
 MIDDLEWARE = [
@@ -51,6 +54,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+ # ...
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -129,3 +135,7 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = "/var/www/example.com/static/"
+
+WHITENOISE_USE_FINDERS = True
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
